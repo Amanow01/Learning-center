@@ -9,7 +9,7 @@ const Header = () => {
 
   const clickMenu = () => {
     setLink((currentValue) => {
-      return currentValue === "header_right" ? "active" : "header_right";
+      return currentValue === !link ? "header_right" : "active";
     });
   };
   return (
@@ -18,7 +18,7 @@ const Header = () => {
         <div className="wrapper flex item-center">
           <div className="header_left">
             <img src={header_logo} alt="header_logo" />
-            <h1>Learning-center</h1>r
+            <h1>Learning-center</h1>
           </div>
           <div
             className={
