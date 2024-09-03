@@ -108,4 +108,14 @@ body {
 .btn-size {
   width: 19.6875rem;
 }
-/* mobile */
+.center {
+  display: flex;
+  justify-content: center;
+}
+.lt-wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

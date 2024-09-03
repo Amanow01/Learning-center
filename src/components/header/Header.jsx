@@ -25,7 +25,7 @@ const Header = () => {
             </button>
           </div>
           {/* 2-part */}
-          <div className="flex item-center col-gap_5_0625rem  mob-p mob-content">
+          <div className="flex item-center lt-wrapper   mob-p mob-content">
             <div className="left_content">
               <h3>Öwrenmäge taýynmy?</h3>
               <div className="mob-fs">

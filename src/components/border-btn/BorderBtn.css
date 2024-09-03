@@ -5,6 +5,7 @@
   width: 100%;
   text-align: center;
   transition: all 250ms ease;
+  cursor: pointer;
 }
 .btnWhite {
   color: #fff;
