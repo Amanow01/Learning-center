@@ -11,11 +11,9 @@ const Hamburg = () => {
           link ? ["header_right", "active"].join(" ") : ["header_right"]
         }
       >
-        <a href="#">Books</a>
-        <a href="#">Courses</a>
-        <a href="#">Others</a>
-        <a href="#">Blog</a>
-        <a href="#">Sing in</a>
+        <a href="#">Kitaplar</a>
+        <a href="#">Dersler</a>
+        <a href="#">Registrasiya</a>
       </div>
       <div onClick={() => setLink(!link)} className="menu">
         {link ? (

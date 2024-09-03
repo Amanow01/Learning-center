@@ -36,11 +36,68 @@ header {
 .hamburg {
   display: none;
 }
-/* responsive */
+.pb-5_8125rem {
+  padding-bottom: 5.8125rem;
+}
+.left_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.left_content h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fd511a;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.left_content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000000;
+  cursor: pointer;
+  line-height: 1rem;
+}
+.green-text {
+  color: #21b573;
+  font-size: 3rem;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1rem;
+}
+.left_content p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  max-width: 26rem;
+  width: 100%;
+}
+.btn-size {
+  max-width: 8rem;
+}
+/* .col-gap_5_0625rem {
+  column-gap: 15rem;
+} */
+.right_content {
+  margin-left: auto;
+}
+.right_content img {
+  width: 100%;
+}
+/* responsive nav*/
+@media screen and (max-width: 1300px) {
+  .mob-p {
+    padding: 0 0.5rem;
+  }
+}
 @media screen and (max-width: 1030px) {
   .header_right {
     display: flex;
     column-gap: 0.25rem;
+  }
+  .mob-p {
+    padding: 0 0.5rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -63,5 +120,23 @@ header {
   }
   .hamburg {
     display: block;
+  }
+}
+/* responsive left-right content*/
+@media screen and (max-width: 1000px) {
+  .mob-fs h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .green-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mob-content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
   }
 }
