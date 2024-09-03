@@ -1,17 +1,12 @@
 import "./Header.css";
 
 import header_logo from "./header-svg/Frame.svg";
-import menu from "./header-img/menu.png";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const Header = () => {
   const [link, setLink] = useState(false);
 
-  const clickMenu = () => {
-    setLink((currentValue) => {
-      return currentValue === !link ? "header_right" : "active";
-    });
-  };
   return (
     <>
       <header>
@@ -31,9 +26,13 @@ const Header = () => {
             <a href="#">Blog</a>
             <a href="#">Sing in</a>
           </div>
-          <button onClick={clickMenu} className="menu">
-            <img src={menu} alt="menu" />
-          </button>
+          <div onClick={() => setLink(!link)} className="menu">
+            {link ? (
+              <AiOutlineClose size={"1.5rem"} />
+            ) : (
+              <AiOutlineMenu size={"1.5rem"} />
+            )}
+          </div>
         </div>
       </header>
     </>
