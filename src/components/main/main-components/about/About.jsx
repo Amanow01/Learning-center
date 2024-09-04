@@ -4,7 +4,7 @@ import { AboutInfo } from "./info";
 const About = () => {
   return (
     <main>
-      <div className="flex lt-wrapper_noCenter speak-between mob-content ">
+      <div className="flex lt-wrapper_noCenter speak-between mob-content mb-6_5625rem">
         {AboutInfo.map((Aboutmaps) => {
           return (
             <>

@@ -1,6 +1,7 @@
 main {
   width: 100%;
 }
+
 /* responsive */
 @media screen and (max-width: 600px) {
   .mob-content {
