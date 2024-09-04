@@ -142,4 +142,7 @@ header {
     align-items: center;
     row-gap: 1.5rem;
   }
+  .left_content {
+    width: 100%;
+  }
 }

@@ -4,12 +4,12 @@ import { AboutInfo } from "./info";
 const About = () => {
   return (
     <main>
-      <div className="flex lt-wrapper_noCenter speak-between">
-        {AboutInfo.map((Aboutmaps, index) => {
+      <div className="flex lt-wrapper_noCenter speak-between mob-content ">
+        {AboutInfo.map((Aboutmaps) => {
           return (
             <>
               <AboutCart
-                key={index}
+                key={Aboutmaps.id}
                 image={Aboutmaps.image}
                 title={Aboutmaps.title}
                 text={Aboutmaps.text}
