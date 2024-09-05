@@ -5,5 +5,48 @@ footer {
   background-color: #282531;
 }
 .left-block_footer {
-  padding: 1rem 0;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-block_footer img {
+  cursor: pointer;
+}
+.left-block_footer p {
+  cursor: pointer;
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 0.5rem #282531 solid;
+  transition: border-bottom 700ms ease;
+  &:hover {
+    border-bottom: 0.5rem orange solid;
+  }
+}
+details {
+  color: orange;
+  cursor: pointer;
+  transition: border-bottom 700ms ease;
+  border-bottom: 0.5px #282531 solid;
+  &:hover {
+    border-bottom: 0.5px orange solid;
+  }
+}
+em {
+  background-color: orange;
+  color: #000000;
+  padding: 0.25rem;
+}
+.right-block_footer {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+.right-block_footer p {
+  color: #ffff;
+  cursor: pointer;
+}
+.col-gap4rem {
+  column-gap: 4rem;
 }
