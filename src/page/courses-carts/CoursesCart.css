@@ -7,7 +7,7 @@
   transition: box-shadow 700ms ease;
 
   &:hover {
-    box-shadow: #e5e5e5 1px 1px 20px 1px;
+    box-shadow: #b4b3b3 1px 1px 20px 1px;
   }
 }
 .courses-cart {
@@ -61,4 +61,7 @@ input {
   display: inline-block;
   column-gap: 0.375rem;
   margin-left: auto;
+}
+.online_people h5 {
+  text-align: center;
 }

@@ -6,3 +6,22 @@
   color: #413960;
   margin-bottom: 3.4375rem;
 }
+.col-gap1_5rem {
+  column-gap: 1.5rem;
+}
+.background-content {
+  background-color: #e5e5e5;
+  padding-top: 2rem;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .mob-content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+  .mob-p {
+    padding: 0 0.5rem;
+  }
+}
