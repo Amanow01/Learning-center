@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <footer className="footer-background">
-        <div className="lt-wrapper_noCenter">
-          <div className="flex item-center col-gap4rem ">
+        <div className="lt-wrapper_noCenter py-3rem">
+          <div className="flex item-center col-gap4rem mob-content mob-p ">
             <div className="left-block_footer">
               <img src={logo} alt="" />
               <p>Okuw merkezi</p>
