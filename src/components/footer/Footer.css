@@ -5,10 +5,12 @@ footer {
   background-color: #282531;
 }
 .left-block_footer {
-  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.py-3rem {
+  padding: 3rem 0;
 }
 .left-block_footer img {
   cursor: pointer;
@@ -49,4 +51,16 @@ em {
 }
 .col-gap4rem {
   column-gap: 4rem;
+}
+/* responsive */
+@media screen and (max-width: 600px) {
+  .mob-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+  .mob-p {
+    padding: 0 0.5rem;
+  }
 }
