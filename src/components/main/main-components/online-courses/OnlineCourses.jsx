@@ -7,19 +7,24 @@ const OnlineCourses = () => {
       <div className="background-content">
         <div className="lt-wrapper_noCenter">
           <h1 className="courses_header">Onlaýn kurslar</h1>
-          <div className="flex item-center col-gap1_5rem mob-content mob-p ">
+          <div
+            className="col-gap1_5rem mob-content mob-p"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill,minmax(20rem, 1fr))",
+            }}
+          >
             {courses_info.map((courses_map) => {
               return (
-                <>
+                <div key={courses_map.it}>
                   <CoursesCart
-                    key={courses_map.it}
                     imageBg={courses_map.imageBg}
                     title={courses_map.title}
                     text={courses_map.text}
                     ltImage={courses_map.ltImage}
                     onlinePeople={courses_map.onlinePeople}
                   />
-                </>
+                </div>
               );
             })}
           </div>
